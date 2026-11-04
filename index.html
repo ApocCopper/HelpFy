@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HelpFy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link id="favicon" rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <h1>HelpFy</h1>
+
+    <button id="settingsButton">
+        <i class="fa-solid fa-gear"></i>
+    </button>
+
+    <button id="addFolder">+ Nova Pasta</button>
+
+    <input
+        type="file"
+        id="faviconInput"
+        accept="image/png,image/jpeg,image/webp,image/x-icon"
+        hidden
+    >
+
+    <div id="dashboard">
+
+        <div class="column" id="column1"></div>
+
+        <div class="column" id="column2"></div>
+
+        <div class="column" id="column3"></div>
+
+        <div class="column" id="column4"></div>
+
+    </div>
+
+    <div id="contextMenu" class="context-menu">
+        <div id="editOption">✏️ Editar</div>
+        <div id="importIconOption">🖼️ Importar ícone</div>
+        <div id="restoreIconOption">↩️ Restaurar ícone padrão</div>
+        <div id="deleteOption">🗑️ Remover</div>
+    </div>
+
+    <div id="settingsMenu" class="settings-menu">
+
+        <button id="changeWallpaper">
+            🖼 Wallpaper
+        </button>
+
+        <button id="resetWallpaper">
+            🔄 Restaurar padrão
+        </button>
+
+        <button id="exportBackup">💾 Exportar backup</button>
+        <button id="importBackup">📂 Importar backup</button>
+
+    </div>
+
+    <input
+        type="file"
+        id="wallpaperInput"
+        accept="image/*"
+        hidden>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
